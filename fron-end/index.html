@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-api</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Sign in</h1>
+        </div>
+        <div class="form-login">
+            <input type="email" placeholder="Email..." id="email" class="text-input">
+            <input type="password" placeholder="Password..." id="password" class="text-input">
+            <div class="btn-login" onclick="btnLogin()">Login</div>
+            <p class="regis">ยังไม่มีบัญชี  <a onclick="regis()"> คลิก</a></p>
+        </div>
+        <div class="form-register-none" id="regis">
+            <div class="close" onclick="closeNone()">X</div>
+            <label for="reg_email">Email :</label>
+            <input type="email" id="reg_email" class="text-input" pattern="@+." required>
+            <label for="reg_username">Username :</label>
+            <input type="text" id="reg_username" class="text-input">
+            <label for="reg_fname">Firstname :</label>
+            <input type="text" id="reg_fname" class="text-input">
+            <label for="reg_lname">Lastname :</label>
+            <input type="text" id="reg_lname" class="text-input">
+            <label for="reg_pass">Password :</label>
+            <input type="password" id="reg_pass" class="text-input" placeholder="a-z,A-Z,0-9,.*!@# ความยาว8">
+            <label for="reg_conpass">Conferm Password :</label>
+            <input type="password" id="reg_conpass" class="text-input">
+            <label for="reg_avatar">Profile :</label>
+            <input type="file" id="reg_avatar" name="file" class="inputfile">
+            <input class="btn-login" onclick="registerUser()" type="submit" value="Register">
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+</html>

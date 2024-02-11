@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container-user">
+        <div class="user-img">
+            <img src="img/user.png" alt="No.Profile" class="img" id="img">
+        </div>
+        <div class="username">
+            <h1 id="username">Username</h1>
+        </div>
+        <div class="info-list">
+            <div>
+                <h4 id="Uemail">Email : </h4>
+                <h4 id="fname">Firstname : </h4>
+                <h4 id="lname">lastname : </h4>
+            </div>
+        </div>
+        <div class="btn-logout" onclick="logout()">Logout</div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="user_login.js"></script>
+</body>
+</html>
